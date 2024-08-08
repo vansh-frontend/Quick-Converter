@@ -3,14 +3,57 @@ body {
     font-family: 'Roboto', sans-serif;
     background-color: #343a40;
     color: #e9ecef;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    height: 100vh; /* Make sure body takes full viewport height */
+    display: flex; /* Use flexbox on body */
+    flex-direction: column; /* Align children vertically */
 }
 
-/* Container Styles */
+/* Main Container */
+.main-container {
+    flex: 1; /* Allow main container to grow */
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+/* Navigation Bar */
+a{
+    text-decoration: none;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    padding: 0 50px;
+    height: 80px;
+  }
+  
+  nav .left a {
+    color: var(--text-color);
+    font-size: 22px;
+    font-weight: 600;
+  }
+  
+  nav .right a {
+    color: var(--text-color);
+    margin: 0 10px;
+  }
+  
+  nav .right a:last-child {
+    color: var(--background-color);
+    background-color: var(--text-color);
+    padding: 5px 15px;
+    border-radius: 5px;
+  }
+  
+  nav .right a span {
+    margin-left: 5px;
+  }
+  
+/* Converter Container */
 .converter-container {
     background-color: #495057;
     border-radius: 12px;
@@ -20,7 +63,6 @@ body {
     width: 100%;
     box-sizing: border-box;
     text-align: center;
-   
 }
 
 /* Heading Styles */
@@ -31,9 +73,9 @@ h1 {
     font-weight: 600;
 }
 
-img{
-    margin:0;
-    height:10vh;
+img {
+    margin: 0;
+    height: 10vh;
 }
 
 /* Form Styles */
@@ -120,6 +162,23 @@ button:hover {
     #result {
         font-size: 20px;
     }
+    nav {
+        padding: 0 20px;
+      }
+    
+      nav .right a {
+        font-size: 22px;
+      }
+    
+      nav .right a:last-child {
+        color: var(--text-color);
+        background-color: transparent;
+        padding: 0;
+      }
+    
+      nav .right a span {
+        display: none;
+      }
 }
 
 @media (max-width: 480px) {
@@ -145,4 +204,21 @@ button:hover {
     #result {
         font-size: 18px;
     }
+    nav {
+        padding: 0 20px;
+      }
+    
+      nav .right a {
+        font-size: 22px;
+      }
+    
+      nav .right a:last-child {
+        color: var(--text-color);
+        background-color: transparent;
+        padding: 0;
+      }
+    
+      nav .right a span {
+        display: none;
+      }
 }
