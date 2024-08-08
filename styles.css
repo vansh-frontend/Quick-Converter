@@ -103,7 +103,7 @@ button:hover {
     }
 
     h1 {
-        font-size: 24px;
+        font-size: 28px;
     }
 
     .converter-form {
@@ -118,7 +118,7 @@ button:hover {
     }
 
     #result {
-        font-size: 18px;
+        font-size: 20px;
     }
 }
 
@@ -128,7 +128,7 @@ button:hover {
     }
 
     h1 {
-        font-size: 20px;
+        font-size: 24px;
     }
 
     .converter-form {
@@ -143,6 +143,6 @@ button:hover {
     }
 
     #result {
-        font-size: 16px;
+        font-size: 18px;
     }
 }
