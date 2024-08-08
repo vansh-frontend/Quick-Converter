@@ -30,6 +30,11 @@ h1 {
     font-weight: 600;
 }
 
+img{
+    margin:0;
+    height:10vh;
+}
+
 /* Form Styles */
 .converter-form {
     display: flex;
