@@ -1,0 +1,88 @@
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .converter-container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .converter-form {
+        gap: 15px;
+    }
+
+    input[type="number"],
+    select,
+    button {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    #result {
+        font-size: 20px;
+    }
+    nav {
+        padding: 0 20px;
+      }
+    
+      nav .right a {
+        font-size: 22px;
+      }
+    
+      nav .right a:last-child {
+        color: var(--text-color);
+        background-color: transparent;
+        padding: 0;
+      }
+    
+      nav .right a span {
+        display: none;
+      }
+}
+
+@media (max-width: 480px) {
+    .converter-container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .converter-form {
+        gap: 10px;
+    }
+
+    input[type="number"],
+    select,
+    button {
+        font-size: 13px;
+        padding: 8px;
+    }
+
+    #result {
+        font-size: 18px;
+    }
+    nav {
+        padding: 0 20px;
+      }
+    
+      nav .right a {
+        font-size: 22px;
+      }
+    
+      nav .right a:last-child {
+        color: var(--text-color);
+        background-color: transparent;
+        padding: 0;
+      }
+    
+      nav .right a span {
+        display: none;
+      }
+}
+
+
+
